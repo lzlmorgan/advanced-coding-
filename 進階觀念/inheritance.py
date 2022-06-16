@@ -6,6 +6,6 @@ class Drink(Product):
 		super().__init__(name, price) #supper().__init__可以呼叫到parent的class
 		self.volume = volume 
 
-d = Drink('vodka', 100, 600)
+d = Drink('Tekila', 100, 600)
 print(d.volume)
 
