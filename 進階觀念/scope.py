@@ -18,6 +18,7 @@ print('--------------------')
 def f():
 	x = 1
 	def ff():
+		nonlocal x #跨enclosed取local值
 		x = 10
 	ff()
 	print(x)
