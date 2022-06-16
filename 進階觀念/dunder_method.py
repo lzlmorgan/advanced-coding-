@@ -36,7 +36,7 @@ class Product:
 p1 = Product('ramen', 60)
 p2 = Product('tea', 200)
 # print(p1 + p2) #清單+清單=清單
-print(p1*5)
+#rint(p1*5)
 
 
 #dunder method 是 python data model 查表 如果需要 goole
@@ -50,10 +50,12 @@ class ShoppingCart:
 		return self.products[key]
 
 s = ShoppingCart([p1, p2])
-print(s[0])
+#print(s[0])
 
 
-
+if __name__ = '__main__':
+	print(p1*5)
+	print(s[0])
 
 
 
