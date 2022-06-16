@@ -53,7 +53,7 @@ s = ShoppingCart([p1, p2])
 #print(s[0])
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
 	print(p1*5)
 	print(s[0])
 
