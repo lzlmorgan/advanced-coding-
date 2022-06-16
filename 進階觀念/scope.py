@@ -8,8 +8,18 @@
 
 x = 1
 def f():
-	global x
+	global x  #global可以跨区域取值
 	x = 10
 
 f()
-print(x) 
+print(x)
+
+print('--------------------')
+def f():
+	x = 1
+	def ff():
+		x = 10
+	ff()
+	print(x)
+
+f()
