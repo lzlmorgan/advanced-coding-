@@ -1,7 +1,9 @@
 #animal
-import abc
+#metaclass=ABCMeta強迫繼承屬性的child class必須override抽象class
 
-class Animal(metaclass=abc.ABCMeta):
+from abc import ABCMeta,abstractmethod,ABC
+
+class Animal(metaclass=abc.ABCMeta): #metaclass=abc.ABCMeta 可用ABC代替
 	@abc.abstractmethod
 	def make_sound(self):
 		print('assd')
