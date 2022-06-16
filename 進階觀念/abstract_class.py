@@ -3,7 +3,9 @@
 #抽象class用來給人繼承的 base class
 #抽象class只有declare沒有content
 #抽象class 需要import abc
-#有一個或以上的@abstract method
+#有一個或以上的@abstract methodH
+
+#抽象類的作用是強迫child class繼承並保持統一性
 
 from abc import ABCMeta, abstractmethod #abstract base class
 
