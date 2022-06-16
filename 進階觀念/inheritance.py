@@ -8,4 +8,9 @@ class Drink(Product):
 
 d = Drink('Tekila', 100, 600)
 print(d.volume)
+print('--------------------')
+print(type(d)) #instance實例d的class資料類別
+print(isinstance(d, Drink))#判斷d是不是屬於class Drink的類別
+print(isinstance(d, Product)) ##判斷d是不是屬於class Product的類別
+print(type(Drink))
 
