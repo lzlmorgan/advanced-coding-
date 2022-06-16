@@ -28,6 +28,7 @@ class Product:
 		return re
 
 
+
 #p = Product('bublle tea', 60) #創建class類,然後建立class的實例instance
 #p + ' cream'
 #print(p)
@@ -36,3 +37,48 @@ p1 = Product('ramen', 60)
 p2 = Product('tea', 200)
 # print(p1 + p2) #清單+清單=清單
 print(p1*5)
+
+
+#dunder method 是 python data model 查表 如果需要 goole
+
+
+class ShoppingCart:
+	def __init__(self, products):
+		self.products = products
+
+	def __getitem__(self, key):
+		return self.products[key]
+
+s = ShoppingCart([p1, p2])
+print(s[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
