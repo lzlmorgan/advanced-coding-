@@ -13,5 +13,6 @@ def f():
 	return inner #inner 直接封裝了def qqq
 
 y = f()
-print(y) #显示结果为<function f.<locals>.inner at 0x10276e710>
+print(y.__closure__) #显示结果为<function f.<locals>.inner at 0x10276e710>
+print(y) #打印出closure
 y()
