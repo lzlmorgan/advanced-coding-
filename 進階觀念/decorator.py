@@ -17,7 +17,8 @@ def time_func(func):
 	return inner   #跑時間差
 
 def test():
-	print('hi')
+	for i in range(10000000):
+		i = i + 1
 
 def test2():
 	print('hello')
@@ -25,12 +26,10 @@ def test2():
 
 print('--------in processing--------')
 test = print_func(test)
-test2 = print_func(test2)
-test()
-test2()
-
-print('---------in processing--------')
 test = time_func(test)
-test2 = time_func(test2)
 test()
+
+print('--------in processing--------')
+test2 = print_func(test2)
+test2 = time_func(test2)
 test2()
