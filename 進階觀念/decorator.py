@@ -16,20 +16,20 @@ def time_func(func):
 		print('elapsed', end - start, 'secs')
 	return inner   #跑時間差
 
+@time_func
+@print_func
 def test():
 	for i in range(10000000):
 		i = i + 1
+	print(i)
 
+@time_func
+@print_func
 def test2():
 	print('hello')
 
 
-print('--------in processing--------')
-test = print_func(test)
-test = time_func(test)
 test()
-
-print('--------in processing--------')
-test2 = print_func(test2)
-test2 = time_func(test2)
+print('-------------------------------')
 test2()
+
