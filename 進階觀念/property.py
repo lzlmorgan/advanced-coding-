@@ -3,12 +3,8 @@
 
 class Batman:
 	def __init__(self, hp):
-		self._hp = hp
+		self.hp = hp
 
-	#getter method	
-	def get_hp(self):
-		return self._hp 
-
-	#setter method
-	def set_hp(self, hp):
-		self._hp = hp
+b1 = Batman(100)
+b2 = Batman(200)
+b1.hp = b1.hp + b2.hp
