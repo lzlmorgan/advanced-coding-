@@ -8,7 +8,7 @@ class Batman:
 	@property #getter method
 	def hp(self):
 		print('asdasd')
-		return self._hp
+		return self._hp 
 
 	@hp.setter
 	def hp(self, hp):
@@ -22,6 +22,6 @@ class Batman:
 				self._hp = hp 
 
 b1 = Batman(100)
-b1.hp
+b1.hp #不用动用b1.hp() 直接调用@property print出结果
 # b2 = Batman(200)
 # b1.hp = b1.hp + b2.hp
