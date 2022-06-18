@@ -3,17 +3,15 @@
 
 class Batman:
 	def __init__(self, hp):
-		self._hp = hp
-	
+		self.hp = hp
+
 	@property #getter method
 	def hp(self):
 		print('asdasd')
-		return self._hp 
+		return self._hp #真正存儲需要運算數據的地方
 
 	@hp.setter
 	def hp(self, hp):
-		def hp(self, hp):
-			self._hp = hp
 			if hp >100:
 				self._hp = 100
 			elif hp < 0:
@@ -22,6 +20,7 @@ class Batman:
 				self._hp = hp 
 
 b1 = Batman(100)
-b1.hp #不用动用b1.hp() 直接调用@property print出结果
+b1.hp = 150 #不用动用b1.hp() 直接调用@property print出结果
+print(b1.hp)
 # b2 = Batman(200)
 # b1.hp = b1.hp + b2.hp
