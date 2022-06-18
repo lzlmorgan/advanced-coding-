@@ -3,8 +3,25 @@
 
 class Batman:
 	def __init__(self, hp):
-		self.hp = hp
+		self._hp = hp
+	
+	@property #getter method
+	def hp(self):
+		print('asdasd')
+		return self._hp
+
+	@hp.setter
+	def hp(self, hp):
+		def hp(self, hp):
+			self._hp = hp
+			if hp >100:
+				self._hp = 100
+			elif hp < 0:
+				self._hp = 0
+			else:
+				self._hp = hp 
 
 b1 = Batman(100)
-b2 = Batman(200)
-b1.hp = b1.hp + b2.hp
+b1.hp
+# b2 = Batman(200)
+# b1.hp = b1.hp + b2.hp
