@@ -27,8 +27,12 @@ print('----------------------')
 x = [0, 1, 2, 3, 4]
 print([i*i for i in x]) #[]正常list
 print((i*i for i in x)) #()生成iterator
-it = (i*i for i in x)
-print(next(it))
-print(next(it))
-print(next(it)) #......
+it1 = (i*i for i in x)
+it2 = (i+1 for i in it1)
+print(next(it2))
+print(next(it2))
+
+# print(next(it))
+# print(next(it))
+# print(next(it)) #......
 
