@@ -8,16 +8,16 @@ class Batman:
 	@property #getter method
 	def hp(self):
 		print('asdasd')
-		return self._hp #真正存儲需要運算數據的地方
+		return self.anything #真正存儲需要運算數據的地方
 
 	@hp.setter
 	def hp(self, hp):
 			if hp >100:
-				self._hp = 100
+				self.anything = 100
 			elif hp < 0:
-				self._hp = 0
+				self.anything = 0
 			else:
-				self._hp = hp 
+				self.anything = hp 
 
 b1 = Batman(100)
 b1.hp = 150 #不用动用b1.hp() 直接调用@property print出结果
